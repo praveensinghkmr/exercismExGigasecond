@@ -4,6 +4,9 @@ public static class Gigasecond
 {
     public static DateTime Add(DateTime birthDate)
     {
-        throw new NotImplementedException("You need to implement this function.");
+        DateTime gigasecondMoment;
+        gigasecondMoment = birthDate.AddSeconds(1000000000);
+        //To view gigasecond birthdate : gigasecondMoment.ToLongDateString()
+        return gigasecondMoment;
     }
 }
